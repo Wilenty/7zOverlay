@@ -3,7 +3,7 @@ You can use this dll if your program/project is completely free of charge. If yo
 For my overlay to work fully, you need the 7z.dll, so if you don't have this file yet, you can download it from here: https://www.7-zip.org/
 
 The parameters for the 7zOverlay.dll file can be found in the 7-ZIP help file, the 7zOverlay.dll uses the same parameters as the 7z.exe file. I hope that the move/change will be easy.<br>
-if you don't add any parameters to the 7zOverlay.dll, it returns help of the parameters in the output buffer, and it returns -1 (without parameters);
+if you don't add any parameters to the 7zOverlay.dll, it returns help of the parameters in the output buffer, and it returns -1 (without parameters).
 
 It loads 7z.dll from the 7zOverlay.dll location, it doesn't matter if you call 7zOverlay.dll from the %tmp% location or from your .exe location. Therefore, the 7z.dll file must be in the same location as the 7zOverlay.dll location.
 
