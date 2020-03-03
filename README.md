@@ -1,6 +1,4 @@
 # 7zOverlay
-The 7zOverlay.dll uses the same parameters as the 7z.exe file.
-
 You can use this dll if your program/project is completely free of charge. If you get any income even from donations or ads, please support me.
 
 For my overlay to work fully, you need the 7z.dll, so if you don't have this file yet, you can download it from here: https://www.7-zip.org/
