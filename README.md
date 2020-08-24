@@ -13,11 +13,11 @@ This dll contains two functions, one for <b>ANSI</b> (CommandFor7zipA) and one f
 <br>
 Two basic examples of use, separately for characters encoding:<br>
 <br>
-1) <b>ANSI</b>:<br>
+1. <b>ANSI</b>:<br>
 C++: <b>int CommandFor7zipA(const char * params, char * &OutputBuffer, char * &ErrorsBuffer);</b><br>
 Delphi: <b>CommandFor7zipA(const params: PAnsiChar; var OutputBuffer, ErrorsBuffer: PAnsiChar): Integer;</b><br>
 <br>
-2) <b>UNICODE</b>:<br>
+2. <b>UNICODE</b>:<br>
 C++: <b>int CommandFor7zipW(const wchar_t * params, wchar_t * &OutputBuffer, wchar_t * &ErrorsBuffer);</b><br>
 Delphi: <b>CommandFor7zipW(const params: PWideChar; var OutputBuffer, ErrorsBuffer: PWideChar): Integer;</b><br>
 <br>
