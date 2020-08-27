@@ -5,19 +5,25 @@ For my overlay to work fully, you need the 7z.dll, so if you don't have this fil
 The parameters for the 7zOverlay.dll file can be found in the 7-ZIP help file, the 7zOverlay.dll uses the same parameters as the 7z.exe file. I hope that the move/change will be easy.<br>
 if you don't add any parameters to the 7zOverlay.dll, it returns help of the parameters in the output buffer, and it returns -1 (without parameters).<br>
 <br>
-It loads 7z.dll from the 7zOverlay.dll location, it doesn't matter if you call 7zOverlay.dll from the %tmp% location or from your .exe location. Therefore, the 7z.dll file must be in the same location as the 7zOverlay.dll location.<br>
+By default it loads 7z.dll file from the 7zOverlay.dll location, it doesn't matter if you call 7zOverlay.dll from the %tmp% location or from your .exe location. But, you can change the 7z.dll file location by the functions <b>Set7zDllPathFileA</b> or <b>Set7zDllPathFileW</b> (example below). Only before any of the functions <b>CommandFor7zipA</b> or <b>CommandFor7zipW</b> you can change the 7z.dll file location. After 7z.dll file is loaded, functions to change the 7z.dll file location does not work.<br>
 <br>
 I tested the 7zOverlay.dll with 7z.dll versions of: 15.05, 16.04, 19.00, 20.00 Alpha and 20.01 alpha. It works fine.<br>
 <br>
-This dll contains two functions, one for <b>ANSI</b> (CommandFor7zipA) and one for <b>UNICODE</b> (CommandFor7zipW) characters.<br>
+This dll contains four functions, two for <b>ANSI</b> (Set7zDllPathFileA, CommandFor7zipA) and two for <b>UNICODE</b> (Set7zDllPathFileW, CommandFor7zipW) characters.<br>
 <br>
 Two basic examples of use, separately for characters encoding:<br>
 <br>
- <b>ANSI</b>:<br>
+1) <b>ANSI</b>:<br>
+C++: <b>BOOL Set7zDllPathFileA(const char * FullPathToThe7zDLL);</b><br>
+Delphi: <b>Set7zDllPathFileA(const FullPathToThe7zDLL: PAnsiChar): BOOL; stdcall;</b><br>
+---<br>
 C++: <b>int CommandFor7zipA(const char * params, char * &OutputBuffer, char * &ErrorsBuffer);</b><br>
 Delphi: <b>CommandFor7zipA(const params: PAnsiChar; var OutputBuffer, ErrorsBuffer: PAnsiChar): Integer;</b><br>
 <br>
- <b>UNICODE</b>:<br>
+2) <b>UNICODE</b>:<br>
+C++: <b>BOOL Set7zDllPathFileW(const wchar_t * FullPathToThe7zDLL);</b><br>
+Delphi: <b>Set7zDllPathFileW(const FullPathToThe7zDLL: PWideChar): BOOL; stdcall;</b><br>
+---<br>
 C++: <b>int CommandFor7zipW(const wchar_t * params, wchar_t * &OutputBuffer, wchar_t * &ErrorsBuffer);</b><br>
 Delphi: <b>CommandFor7zipW(const params: PWideChar; var OutputBuffer, ErrorsBuffer: PWideChar): Integer;</b><br>
 <br>
