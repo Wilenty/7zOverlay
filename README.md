@@ -13,14 +13,14 @@ This dll contains four functions, two for <b>ANSI</b> (Set7zDllPathFileA, Comman
 <br>
 Two basic examples of use, separately for characters encoding:<br>
 <br>
-1) <b>ANSI</b>:<br>
+<b>ANSI</b>:<br>
 C++: <b>BOOL Set7zDllPathFileA(const char * FullPathToThe7zDLL);</b><br>
 Delphi: <b>Set7zDllPathFileA(const FullPathToThe7zDLL: PAnsiChar): BOOL; stdcall;</b><br>
 ---<br>
 C++: <b>int CommandFor7zipA(const char * params, char * &OutputBuffer, char * &ErrorsBuffer);</b><br>
 Delphi: <b>CommandFor7zipA(const params: PAnsiChar; var OutputBuffer, ErrorsBuffer: PAnsiChar): Integer;</b><br>
 <br>
-2) <b>UNICODE</b>:<br>
+<b>UNICODE</b>:<br>
 C++: <b>BOOL Set7zDllPathFileW(const wchar_t * FullPathToThe7zDLL);</b><br>
 Delphi: <b>Set7zDllPathFileW(const FullPathToThe7zDLL: PWideChar): BOOL; stdcall;</b><br>
 ---<br>
