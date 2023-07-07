@@ -38,13 +38,13 @@ void __cdecl ProgressCallback(wchar_t * FileName, UInt64 Total, UInt64 Files, UI
 
 **Explanation of the parameters of the CallBack Procedure, depends of List/Extract/Create/Update.**
 
-List:
++ **List**:
 ProgressCallback(FileName -> path and/or name in the archive, Total -> packed size, Completed -> original size, Files -> file number)
 
-Extract:
++ **Extract**:
 ProgressCallback(FileName -> path and/or name in the archive, Total -> total size do unpack, Completed -> size already done, Files -> file number)
 
-Create/Update:
++ **Create/Update**:
 ProgressCallback(FileName -> path and/or name of currently processed, Total -> total size to process, Completed -> size already done, Files -> total files to process)
 
 
