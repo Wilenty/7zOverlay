@@ -39,13 +39,13 @@ void __cdecl ProgressCallback(wchar_t * FileName, UInt64 Total, UInt64 Files, UI
 **Explanation of the parameters of the CallBack Procedure, depends of List/Extract/Create/Update.**
 
 + **List**:
-ProgressCallback(FileName -> path and/or name in the archive, Total -> packed size, Completed -> original size, Files -> file number)
+ProgressCallback(**FileName** -> path and/or name in the archive, **Total** -> packed size, **Completed** -> original size, **Files** -> file number)
 
 + **Extract**:
-ProgressCallback(FileName -> path and/or name in the archive, Total -> total size do unpack, Completed -> size already done, Files -> file number)
+ProgressCallback(**FileName** -> path and/or name in the archive, **Total** -> total size do unpack, **Completed** -> size already done, **Files** -> file number)
 
 + **Create/Update**:
-ProgressCallback(FileName -> path and/or name of currently processed, Total -> total size to process, Completed -> size already done, Files -> total files to process)
+ProgressCallback(**FileName** -> path and/or name of currently processing, **Total** -> total size to process, **Completed** -> size already done, **Files** -> total files processed)
 
 
 I share it as the BETA, because it needs to be tested, even if I tested it already on main computer and VM (virtual machine).
