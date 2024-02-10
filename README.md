@@ -1,8 +1,8 @@
 # 7zOverlay
 
 [![Latest Version](https://img.shields.io/github/release/Wilenty/7zOverlay.svg)](https://github.com/Wilenty/7zOverlay/releases/latest)
-[![Latest Release Downloads](https://img.shields.io/github/downloads/Wilenty/7zOverlay/latest/total.svg)](https://github.com/Wilenty/7zOverlay/releases/latest)
 [![Total Downloads](https://img.shields.io/github/downloads/Wilenty/7zOverlay/total.svg)](https://github.com/Wilenty/7zOverlay/releases)
+[![Latest Release Downloads](https://img.shields.io/github/downloads/Wilenty/7zOverlay/latest/total.svg)](https://github.com/Wilenty/7zOverlay/releases/latest)
 [![v19.09b Release Downloads](https://img.shields.io/github/downloads/Wilenty/7zOverlay/v19.09b/total.svg)](https://github.com/Wilenty/7zOverlay/releases/v19.09b)
 
 You can use this dll if your program/project is completely free of charge. If you get any income even from donations or ads, please support me.<br>
