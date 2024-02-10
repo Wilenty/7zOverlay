@@ -1,3 +1,6 @@
+[![v19.09b Release Downloads](https://img.shields.io/github/downloads/Wilenty/7zOverlay/v19.09b/total.svg)](https://github.com/Wilenty/7zOverlay/releases/v19.09b)
+[![Total Downloads](https://img.shields.io/github/downloads/Wilenty/7zOverlay/total.svg)](https://github.com/Wilenty/7zOverlay/releases)
+
 + At the user request I added the function with CallBack, also updated the examples for Delphi and C/C++.
 - Removed the Benchmarking possibility, because it hangs the program execution, so it's not needed here.
 
